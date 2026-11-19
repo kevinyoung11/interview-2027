@@ -6,9 +6,9 @@ Prepared on November 19, 2026, for a developer with 10 years of software enginee
 
 整理于 2026 年 11 月 19 日，适用于具有 10 年软件开发经验、准备申请美国 Senior AI／Agent Engineer 岗位的工程师。
 
-Plan for 8–10 hours per week. The sequence develops agent mechanisms, systematic evaluation, and production reliability through one evolving project. Time allocations, exercises, and acceptance criteria are learning recommendations. The course labs have yet to be run as part of preparing this checklist.
+The final objective is a complete AI product for developers or individual users, validated by paying customers and positive operating profit over a documented period. Plan for 8–10 hours per week, developing agent mechanisms, systematic evaluation, and production reliability through that product. Time allocations, exercises, and acceptance criteria are learning recommendations. The course labs have yet to be run as part of preparing this checklist.
 
-每周安排 8–10 小时，通过一个持续演进的项目，依次掌握 Agent 机制、系统化评测和生产可靠性。时间分配、练习和验收标准属于学习建议。本清单整理过程中尚未实际运行课程实验。
+最终目标是面向开发者或个人用户，完成一个有真实付费客户、在明确统计周期内经营利润为正的完整 AI 产品。每周安排 8–10 小时，通过这个产品依次掌握 Agent 机制、系统化评测和生产可靠性。时间分配、练习和验收标准属于学习建议。本清单整理过程中尚未实际运行课程实验。
 
 For job requirements and background research, see the [companion guide](AI工程师岗位要求与8周学习计划.md).
 
@@ -86,9 +86,49 @@ There are 15 resource entries when the three LangGraph reference pages are count
 
 贯穿八周的项目
 
-Build an order-support agent with simulated orders and refunds. It can find an order, clarify the item, check eligibility, ask for confirmation, and submit a simulated refund. The application supplies user identity and enforces ownership, eligibility, amounts, and confirmation. Keep a single codebase and version the changes across weeks.
+Build one narrowly scoped product for developers or individual users. In Week 1, compare recurring tasks that you can investigate directly, such as explaining failed agent traces, turning technical reading into contextual practice, or reviewing AI engineering interview answers. These are discovery hypotheses. Select the product from observed workflows, accessible samples, and willingness to try and pay.
 
-构建订单售后 Agent，使用模拟订单和退款。它能够查询订单、澄清商品、核对资格、请求确认并提交模拟退款。应用提供用户身份，并校验订单所有权、资格、金额和确认状态。八周使用同一代码库，保留各阶段版本。
+面向开发者或个人用户构建一个范围明确的小产品。第一周比较自己能够直接调研的重复任务，例如 Agent 失败轨迹分析、技术阅读后的情境练习、AI 工程面试回答复盘。这些是待验证的需求假设，具体产品根据真实工作流程、可获得的样本，以及试用和付费意愿确定。
+
+The order-support example in the engineering exercises provides a concrete implementation reference. Apply the same tool, state, approval, evaluation, and recovery exercises to the selected product, and record the corresponding user task. Define a complete input-to-deliverable workflow with onboarding, usage limits, payment or paid-pilot terms, support, and a repeat-use path.
+
+工程练习中的订单售后示例提供具体实现参考。将相同的工具、状态、确认、评测和恢复练习映射到所选产品，并记录对应用户任务。完整产品需要覆盖输入到交付结果的流程，以及引导、用量限制、支付或付费试点约定、支持和重复使用路径。
+
+## Commercial Outcome and Evidence
+
+商业目标与证据
+
+Use eight weeks as the first build-and-validation cycle. A completed learning cycle and a commercially validated product have separate evidence. If profitability remains unverified, record the gap and extend or adjust the product experiment.
+
+八周作为第一轮开发与验证周期。完成学习周期和完成商业验证分别记录证据。若盈利尚未验证，记录缺口并延长或调整产品实验。
+
+- [ ] Identify a specific user, recurring task, current alternative, and measurable benefit using real conversations and task samples.
+
+  通过真实交流与任务样本，明确用户、重复任务、现有替代方案和可衡量收益。
+- [ ] Deliver a complete core workflow that a target user can complete, with result review, failure handling, onboarding, support, and clear paid terms.
+
+  交付目标用户能够完成的核心流程，具备结果检查、失败处理、引导、支持和清晰付费约定。
+- [ ] Record payment from a target customer and actual delivery. Keep the agreed scope, transaction evidence, refunds, and customer feedback.
+
+  记录目标客户的真实付款与实际交付，保留约定范围、交易凭证、退款和反馈。
+- [ ] Measure repeat use and renewal or repeat-purchase decisions over an observation period appropriate to the task frequency.
+
+  按任务发生频率确定观察周期，记录重复使用、续费或再次购买的决定。
+- [ ] Demonstrate positive operating profit for a stated period, including product revenue, refunds, payment fees, model and tool calls, hosting, storage, acquisition spending, and delivery/support labor.
+
+  在明确周期内验证经营利润为正，核算产品收入、退款、支付手续费、模型和工具调用、托管、存储、获客支出，以及交付和支持人工。
+- [ ] State how founder labor is valued. Report one-time development hours and spending separately and estimate the time needed to recover them at the observed profit rate.
+
+  明确自己的人工时间如何计价，单列一次性开发时间与支出，并按实测利润估算收回投入所需时间。
+
+Operating profit for the observation period equals product revenue earned from delivered service, less refunds and all operating costs above. Distinguish prepaid cash from revenue earned during the period. Use actual invoices and time records where available, identify estimates, and report both per-successful-task cost and period profit.
+
+观察周期经营利润等于已交付服务对应的产品收入，减去退款和上述全部经营成本。区分预收现金与当期已交付服务收入。有账单和工时记录时使用实测数据，标明估算部分，同时报告单次成功任务成本和周期利润。
+
+Start with approximately two hours of focused study, five hours of development and evaluation, and two hours of user contact, sales, and review each week. Reallocate time to the current product blocker. Optional courses can replace study time within that budget.
+
+每周先按约两小时针对性学习、五小时开发评测、两小时用户接触销售与复盘安排，并根据产品当前阻碍调整。选学课程占用这份预算内的学习时间。
+
 
 ## Week 1 — Agent Mechanisms and Tool Use
 
@@ -141,6 +181,20 @@ Use 75 minutes on each weekday and two hours on each weekend day, approximately 
 
   能用英文说明 Agent 的功能、业务规则由谁校验，以及自己修复的一个问题。
 
+### Commercial Practice and Evidence
+
+商业实践与证据
+
+- [ ] Speak with approximately three reachable developers or individual users about their most recent attempt at a recurring task. Capture frequency, effort, existing tools, and sample inputs.
+
+  尝试与约三位能接触到的开发者或个人用户交流，了解最近一次重复任务的过程，记录频率、投入、现有工具和输入样本。
+- [ ] Select one task and write a one-page offer hypothesis naming the user, input, deliverable, benefit, and access channel. Adapt the engineering exercise to that task.
+
+  选定一个任务，写一页产品假设，明确用户、输入、交付物、收益和接触渠道，并据此调整工程练习。
+- [ ] Retain evidence of the problem and a concrete next step with a potential user. If evidence is weak, document the uncertainty and test another task.
+
+  保留问题证据和与潜在用户约定的具体下一步。证据不足时记录不确定性并验证其他任务。
+
 Completion date / 完成日期 — ____
 
 Evidence link / 证据链接 — ____
@@ -188,6 +242,20 @@ Study R06, prioritizing state, memory, streaming, and human intervention. Revisi
 - [ ] Explain checkpointing and external side effects separately, including the remaining failure window between them.
 
   分别解释 checkpoint 与外部副作用，以及两者之间仍存在的故障窗口。
+
+### Commercial Practice and Evidence
+
+商业实践与证据
+
+- [ ] Show the core workflow to potential users and observe them completing their own tasks. Record the baseline effort and assistance required.
+
+  向潜在用户演示核心流程，观察他们完成自己的任务，记录原有投入和需要的人工协助。
+- [ ] Define a small paid-pilot offer with deliverables, limits, price hypothesis, and support scope. Ask users to react to the offer.
+
+  定义一个小规模付费试点方案，写清交付、限制、价格假设和支持范围，请用户给出反馈。
+- [ ] Retain user-session evidence, a revised workflow, and a clear reason to continue or change the offer.
+
+  保留用户操作证据、调整后的流程，以及继续或修改方案的明确理由。
 
 Completion date / 完成日期 — ____
 
@@ -237,6 +305,20 @@ Study R07–R09. Allocate roughly three hours to course material and five to sev
 
   展示 Judge 与人工一致及不一致的实例，并说明样本的局限。
 
+### Commercial Practice and Evidence
+
+商业实践与证据
+
+- [ ] Have target users review examples of acceptable and unacceptable results. Incorporate their criteria into the evaluation dataset and rubric.
+
+  请目标用户判断可接受与不可接受结果，将他们的标准纳入评测集和评分规则。
+- [ ] Measure useful outputs, correction time, and delivery effort on actual user tasks. Identify the minimum quality needed for a paid pilot.
+
+  在实际用户任务上测量有效结果、修改时间与交付投入，明确付费试点需要的最低质量。
+- [ ] Retain customer-grounded evaluation criteria and a baseline comparison with the current alternative.
+
+  保留来源于用户的评测标准，以及与现有替代方式的基线比较。
+
 Completion date / 完成日期 — ____
 
 Evidence link / 证据链接 — ____
@@ -284,6 +366,20 @@ Apply R08–R09. R10 provides optional practice in organizing experiments and ru
 - [ ] Produce a report that connects the hypothesis, code or configuration change, measurements, and decision.
 
   报告能够连接假设、代码或配置改动、测量结果与最终决策。
+
+### Commercial Practice and Evidence
+
+商业实践与证据
+
+- [ ] Offer the scoped paid pilot and record responses, objections, agreed terms, and payment status. Use a simple deployable workflow or assisted delivery to serve the pilot.
+
+  提出范围明确的付费试点，记录反馈、异议、约定条款和付款状态，使用可部署的简单流程或辅助交付服务试点。
+- [ ] Deliver the agreed result and record the model cost, manual corrections, turnaround time, and customer acceptance.
+
+  交付约定结果，记录模型费用、人工修改、交付时间和客户验收。
+- [ ] Retain actual payment and delivery evidence when achieved. Otherwise record the rejection reasons and the next experiment, with the payment goal pending.
+
+  成交后保留真实付款与交付证据。尚未成交时记录拒绝原因和下一次实验，将付款目标保留为待完成。
 
 Completion date / 完成日期 — ____
 
@@ -333,6 +429,20 @@ Study R11 and begin R12's incident-response material. Build on the persistence i
 
   记录下游能力假设、剩余一致性限制和未决操作处理方式。
 
+### Commercial Practice and Evidence
+
+商业实践与证据
+
+- [ ] Agree with trial users on confirmation points, sensitive data access, failure handling, and support expectations for the selected task.
+
+  与试用用户确认所选任务中的操作确认点、敏感数据访问、失败处理和支持预期。
+- [ ] Observe another use of the product and measure how much founder intervention remains. Apply recovery work to the failures that affect delivery.
+
+  观察用户再次使用产品，测量仍需多少个人介入，将恢复机制应用到影响交付的问题。
+- [ ] Retain a support and recovery procedure plus a record of repeated use or the reason users stopped.
+
+  保留支持与恢复流程，以及用户重复使用或停止使用的原因记录。
+
 Completion date / 完成日期 — ____
 
 Evidence link / 证据链接 — ____
@@ -380,6 +490,20 @@ Complete R12's selected observability, cost/performance, and incident-response m
 - [ ] Use the incident procedure to diagnose a second injected failure and record the recovery result.
 
   使用事故处理流程诊断第二个注入故障，并记录恢复结果。
+
+### Commercial Practice and Evidence
+
+商业实践与证据
+
+- [ ] Build a unit-cost sheet including successful tasks, failed attempts, retries, model and tool usage, hosting, payment fees, and support labor.
+
+  建立单位成本表，计入成功任务、失败尝试、重试、模型工具使用、托管、支付手续费和支持人工。
+- [ ] Compare pricing and usage limits with measured cost. Track acquisition spending and your time spent finding and serving users.
+
+  用实测成本检查定价与用量限制，记录获客支出，以及寻找和服务用户的时间。
+- [ ] Retain a period profit calculation and explain whether observed usage and pricing can sustain positive profit.
+
+  保留周期利润核算，说明当前使用情况和定价是否能够维持正利润。
 
 Completion date / 完成日期 — ____
 
@@ -432,6 +556,20 @@ Choose R13A for AWS or R13B for Google Cloud. R14 is optional support for the Go
 
   展示回滚结果、评测报告、权限检查，以及资源清理或继续运行的决定。
 
+### Commercial Practice and Evidence
+
+商业实践与证据
+
+- [ ] Turn the pilot into a repeatable product workflow with onboarding, result delivery, support contact, and applicable payment or renewal handling.
+
+  将试点整理为可重复交付的产品流程，补齐引导、结果交付、支持联系和适用的支付或续费处理。
+- [ ] Invite another target user through a channel you can repeat. Record the path from first contact through use and purchase decision.
+
+  通过可重复的渠道邀请另一位目标用户，记录首次接触、使用到购买决定的过程。
+- [ ] Retain evidence of repeatable delivery and distinguish paid customers, active trials, and prospects.
+
+  保留可重复交付的证据，分别记录付费客户、活跃试用者和潜在客户。
+
 Completion date / 完成日期 — ____
 
 Evidence link / 证据链接 — ____
@@ -482,6 +620,20 @@ Review the earlier materials against the target role. Use the project evidence t
 - [ ] Record unresolved issues and the next study priorities based on the target job descriptions.
 
   记录未解决问题，并依据目标 JD 排出下一步学习重点。
+
+### Commercial Practice and Evidence
+
+商业实践与证据
+
+- [ ] Review the full observation period, including revenue earned, refunds, operating costs, founder labor, repeat use, and outstanding customer obligations.
+
+  复盘完整观察周期，核对已交付收入、退款、经营成本、个人工时、重复使用和未完成客户义务。
+- [ ] Prepare a product demonstration and commercial case study alongside the engineering reports. Use actual numbers and identify estimates.
+
+  在工程报告之外准备产品演示和商业案例，使用真实数字并标明估算。
+- [ ] Check the commercial outcome items only when their evidence is available. Set the next iteration from customer and profitability results.
+
+  商业目标有对应证据后再勾选，根据用户和利润结果确定下一轮迭代。
 
 Completion date / 完成日期 — ____
 

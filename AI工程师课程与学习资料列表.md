@@ -6,9 +6,9 @@ Prepared on November 19, 2026, for a software engineer with 10 years of developm
 
 整理于 2026 年 11 月 19 日，适用于具有 10 年开发经验、准备申请 Senior AI／Agent Engineer 岗位的工程师。
 
-Study in the order shown below, moving from LLM and agent mechanisms to systematic evaluation and production reliability. Required and optional labels reflect the recommended eight-week plan. The course labs have yet to be run as part of preparing these documents.
+Use the courses to deliver a complete AI product for developers or individual users, with real payment, repeat-use evidence, and positive operating profit. Study in the order shown below, moving from LLM and agent mechanisms to systematic evaluation and production reliability. Required and optional labels reflect the recommended eight-week plan. The course labs have yet to be run as part of preparing these documents.
 
-按下列顺序学习，从 LLM 与 Agent 机制进入系统化评测，再进入生产可靠性。必学、选学标记对应推荐的八周计划。整理文档时尚未实际运行课程实验。
+通过课程完成面向开发者或个人用户的完整 AI 产品，验证真实付款、重复使用与正向经营利润。按下列顺序学习，从 LLM 与 Agent 机制进入系统化评测，再进入生产可靠性。必学、选学标记对应推荐的八周计划。整理文档时尚未实际运行课程实验。
 
 For weekly exercises and acceptance criteria, use the [eight-week study checklist](AI工程师8周学习打卡清单.md). The [companion guide](AI工程师岗位要求与8周学习计划.md) provides job requirements and background research.
 

@@ -211,13 +211,13 @@ LangChain 和 DeepLearning.AI 属于补充来源。优先完成主线，视频�
 
 **8 周学习计划**
 
-Plan for 8–10 hours per week, or approximately 64–80 hours in total. This assumes you can build basic services and scripts in Python and use Git and common deployment tools. Add preparation time if your Python skills need work. Allocate roughly 30% of each week to study, 60% to coding and experiments, and 10% to explaining technical work in English.
+Plan for 8–10 hours per week, or approximately 64–80 hours in total. This assumes you can build basic services and scripts in Python and use Git and common deployment tools. Add preparation time if your Python skills need work. Start with roughly two hours of focused study, five hours of development and evaluation, and two hours of user contact, sales, and review each week. Integrate English explanations into project notes and demonstrations.
 
-每周预计投入 8–10 小时，总计约 64–80 小时。前提是能够使用 Python 完成基本服务与脚本开发，能够使用 Git 和常见部署工具。若 Python 熟练度不足，增加热身时间。每周建议约三成时间学习、六成编码与实验、一成英文表达。
+每周预计投入 8–10 小时，总计约 64–80 小时。前提是能够使用 Python 完成基本服务与脚本开发，能够使用 Git 和常见部署工具。若 Python 熟练度不足，增加热身时间。每周先安排约两小时针对性学习、五小时开发评测、两小时用户接触销售与复盘，将英文表达融入项目记录和演示。
 
-Use one project in a familiar business domain throughout the plan, such as an order support agent. Use synthetic data and controlled test tools to simulate order queries, policy retrieval, refund requests, and approvals. Improve the same system in each phase.
+The final output is a complete AI product for developers or individual users, validated by real customer payment, repeat use, and positive operating profit over a stated period. Select a narrowly scoped task through user conversations in Week 1, then improve that product across the eight weeks. Use controlled data and tools for failure testing, and obtain appropriate permission for real user samples.
 
-建议贯穿一个熟悉业务的项目，例如订单售后 Agent。用合成数据和可控测试工具模拟订单查询、政策检索、退款申请与审批。各阶段持续完善同一个系统。
+最终成果是面向开发者或个人用户的完整 AI 产品，并以真实客户付款、重复使用和明确周期内的正向经营利润验证。第一周通过用户交流确定一个范围明确的任务，随后八周持续完善同一产品。故障实验使用可控数据与工具，真实用户样本取得适当授权。
 
 | Week<br>周次 | Study activities<br>学习安排 | Practical deliverables<br>实践交付 | Acceptance criteria<br>自测验收 |
 | --- | --- | --- | --- |
@@ -234,13 +234,19 @@ Use 50–100 cases for the initial exercise. Determine production data coverage,
 
 50–100 条样本用于首版练习，正式发布所需的数据覆盖、风险阈值和测试规模应由具体业务决定。每阶段以完成交付和能够解释设计为进度依据。
 
+
+Follow the weekly commercial tasks and acceptance evidence in the [study checklist](AI工程师8周学习打卡清单.md). Technical work and customer validation progress together. Offer a scoped paid pilot in Week 4, measure repeat use and full operating costs in Weeks 5–6, and review delivery and profitability in Weeks 7–8. Eight weeks is the first experiment cycle, and an unverified commercial outcome remains pending.
+
+每周商业行动与验收证据见[学习打卡清单](AI工程师8周学习打卡清单.md)。技术工作和客户验证同步推进，第 4 周提出付费试点，第 5–6 周测量重复使用和完整经营成本，第 7–8 周复盘交付与利润。八周是第一轮实验周期，未验证的商业目标继续保留为待完成。
+
+
 ## 6. Final Deliverables and Interview Communication
 
 **最终成果与面试表达**
 
-Aim to produce the following project artifacts.
+Produce a usable commercial product with customer, delivery, repeat-use, and profit evidence, together with the following engineering artifacts. Account for founder delivery and support labor, and report one-time development investment separately.
 
-建议项目成果包含以下内容。
+交付可使用的商业产品，保留客户、交付、重复使用和利润证据，同时形成以下工程成果。核算自己的交付与支持人工，单列一次性开发投入。
 
 - A runnable agent and controlled tool environment, with setup, configuration, and demonstration instructions.<br>
   可运行的 Agent 与可控工具环境，附启动、配置和演示说明。
