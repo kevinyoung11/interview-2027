@@ -13,7 +13,142 @@ Agent ~= control flow defined by an LLM
 
 
 
+# LangGraph
 
+## Graph
+
+- State
+The State schema serves as the input schema for all Nodes and Edges in the graph.
+
+- Nodes
+Just python functions.
+
+- Edges
+Connect the nodes.
+
+- Graph
+StateGraph(State) -> Add Nodes -> Add Edges
+
+## Chain
+
+Chat messages -> graph state
+Chat models -> graph nodes
+Binding tools to our chat model
+Executing tool calls in graph nodes
+
+- Messages
+LangChain supports HumanMessage, AIMessage, SystemMessage, and ToolMessage
+
+- Tools
+They are useful nodes whenever you want a model to interact with external systems.
+  - pass any function into ChatModel.bind_tools(function)
+  - build input -> tool_call = llm_with_tools.invoke([HumanMessage(content=f"What is 2 multiplied by 3", name="Lance")])
+  - invoke -> tool_call.tool_calls
+
+## Router
+
+Graph can 1-Return a tool call  2-Return a natural language response
+
+We can think of this as a router, where the chat model routes between a direct response or a tool call based upon the user input.
+
+## Agent
+
+This is the intuition behind ReAct, a general agent architecture.
+
+act - let the model call specific tools
+observe - pass the tool output back to the model
+reason - let the model reason about the tool output to decide what to do next (e.g., call another tool or just respond directly)
+
+Loop
+
+- Agents with Tools 
+Execution results back to the LLM, ReAct for NEXT STEP.
+
+- Agents with Memory
+State is transient to a single graph execution.
+LangGraph can use a checkpointer to automatically save the graph state after each step.
+This built-in persistence layer gives us memory, allowing LangGraph to pick up from the last state update.
+saving method : thread_id -> checkpointer -> langgraph state
+memory -> langgraph state shared by every single graph execution.
+A graph is a collection of checkpoints.
+
+## Deployment
+We built up to an agent with memory:
+  act - let the model call specific tools
+  observe - pass the tool output back to the model
+  reason - let the model reason about the tool output to decide what to do next (e.g., call another tool or just respond directly)
+  persist state - use an in memory checkpointer to support long-running conversations with interruptions
+
+Concepts
+  - LangGraph
+    - Python and JavaScript library
+    - Allows creation of agent workflows
+
+  - LangGraph API
+    - Bundles the graph code
+    - Provides a task queue for managing asynchronous operations
+    - Offers persistence for maintaining state across interactions
+    
+  - LangSmith Deployment (formerly LangGraph Cloud)
+    - Hosted service for the LangGraph API
+    - Allows deployment of graphs from GitHub repositories
+    - Also provides monitoring and tracing for deployed graphs
+    - Accessible via a unique URL for each deployment
+    
+  - LangSmith Studio (formerly LangGraph Studio)
+    - Integrated Development Environment (IDE) for LangGraph applications
+    - Uses the API as its back-end, allowing real-time testing and exploration of graphs
+    - Can be run locally or with cloud-deployment. See below.
+    
+  - LangGraph SDK
+    - Python library for programmatically interacting with LangGraph graphs
+    - Provides a consistent interface for working with graphs, whether served locally or in the cloud
+    - Allows creation of clients, access to assistants, thread management, and execution of runs
+
+## State & Memory
+
+### State Schema
+
+TypedDict & Pydantic & Dataclasses
+pydantic -> validate state schema structure.
+
+### State Reducers
+
+Specify how state updates are performed on specific keys / channels in the state schema.
+Default overwriting state -> Branching -> Custom Reducers -> Messages -> Re-writing -> Removal
+Common Reducers : add_message, operator.add
+add_messages allows us to append messages to the messages key in our state
+
+### Multiple Schema
+
+Customize graphs with multiple schemas for more control over internal nodes or different input/output schemas
+
+- Private schema 
+Anything needed as part of the intermediate working logic of the graph
+input / output schemas perform filtering on what keys are permitted on the input and output of the graph. -> graph = StateGraph(OverallState, input_schema=InputState, output_schema=OutputState)
+
+### Trim and Filter Messages
+
+Build a chatbot with long-term memory.
+Filtering Messages -> cutting messages
+Trim Messages -> set tokens limitation
+
+### Message Summarization
+
+Use LLMs to produce a running summary of the conversation.
+Checkpointer: MemorySaver (an in-memory key-value store for Graph state.) : checkpointer -> save graph state -> persistence in memory 
+memory = MemorySaver()
+graph = workflow.compile(checkpointer=memory)
+The checkpointer saves the state at each step as a checkpoint.
+
+Threads : 
+These saved checkpoints can be grouped into a thread of conversation.
+Threads are like Slack channels, capturing grouped collections of state (e.g., conversation).
+
+Summarization function: 
+Decision how to summarize.
+
+### 
 
 
 # Appendix
